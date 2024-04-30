@@ -6,6 +6,8 @@ namespace TDD
 {
     public class Calculadora
     {
+        private List<string> _historico = new List<string>();
+
         public int Somar(int numero1, int numero2)
         {
             int resultado = numero1 + numero2;
@@ -33,6 +35,16 @@ namespace TDD
         public List<string> Historico()
         {
             return null;
+        }
+
+        private void AdicionarAoHistorico(string operacao)
+        {
+            _historico.Insert(0, operacao);
+
+            if (_historico.Count > 3)
+            {
+                _historico.RemoveAt(3);
+            }
         }
     }
 }
