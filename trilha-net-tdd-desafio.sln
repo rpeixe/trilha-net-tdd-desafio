@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3A182877-1FFE-4C06-84CF-8B3ECB5BECE2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD", "TDD\TDD.csproj", "{217E7294-7930-4499-80B3-EFB5D0852AA5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3EDB8ED2-7862-4210-B052-AAE94FA0499C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDD.Tests", "TDD.Tests\TDD.Tests.csproj", "{858A495D-05B1-42F2-9B9B-7722F5704510}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{217E7294-7930-4499-80B3-EFB5D0852AA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{217E7294-7930-4499-80B3-EFB5D0852AA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{217E7294-7930-4499-80B3-EFB5D0852AA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{217E7294-7930-4499-80B3-EFB5D0852AA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{858A495D-05B1-42F2-9B9B-7722F5704510}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{858A495D-05B1-42F2-9B9B-7722F5704510}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{858A495D-05B1-42F2-9B9B-7722F5704510}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{858A495D-05B1-42F2-9B9B-7722F5704510}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{217E7294-7930-4499-80B3-EFB5D0852AA5} = {3A182877-1FFE-4C06-84CF-8B3ECB5BECE2}
+		{858A495D-05B1-42F2-9B9B-7722F5704510} = {3EDB8ED2-7862-4210-B052-AAE94FA0499C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F7EAAFA-9725-4C67-8C2A-68F866056CCA}
+	EndGlobalSection
+EndGlobal
