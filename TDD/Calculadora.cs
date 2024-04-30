@@ -23,7 +23,7 @@ namespace TDD
 
         public int Dividir(int numero1, int numero2)
         {
-            return 0;
+            return numero1 / numero2;
         }
 
         public List<string> Historico()
