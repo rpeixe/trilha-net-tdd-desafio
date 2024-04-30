@@ -115,17 +115,17 @@ namespace TDD.Tests
             var calculadora = new Calculadora();
 
             calculadora.Somar(1, 2);
-            calculadora.Somar(3, 4);
-            calculadora.Somar(5, 6);
-            calculadora.Somar(7, 8);
+            calculadora.Subtrair(3, 4);
+            calculadora.Multiplicar(5, 6);
+            calculadora.Dividir(7, 8);
             List<string> historico = calculadora.Historico();
             string resultado1 = historico[0];
             string resultado2 = historico[1];
             string resultado3 = historico[2];
 
-            Assert.Equal("3 + 4 = 7", resultado1);
-            Assert.Equal("5 + 6 = 11", resultado2);
-            Assert.Equal("7 + 8 = 15", resultado3);
+            Assert.Equal("7 / 8 = 0", resultado1);
+            Assert.Equal("5 * 6 = 30", resultado2);
+            Assert.Equal("3 - 4 = -1", resultado3);
         }
     }
 }
