@@ -6,22 +6,22 @@ namespace TDD
 {
     public class Calculadora
     {
-        public int Somar(int num1, int num2)
+        public int Somar(int numero1, int numero2)
         {
             return 0;
         }
 
-        public int Subtrair(int num1, int num2)
+        public int Subtrair(int numero1, int numero2)
         {
             return 0;
         }
 
-        public int Multiplicar(int num1, int num2)
+        public int Multiplicar(int numero1, int numero2)
         {
             return 0;
         }
 
-        public int Dividir(int num1, int num2)
+        public int Dividir(int numero1, int numero2)
         {
             return 0;
         }
