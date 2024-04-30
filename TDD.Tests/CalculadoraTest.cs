@@ -31,5 +31,18 @@ namespace TDD.Tests
 
             Assert.Equal(resultadoEsperado, resultado);
         }
+
+        [Theory]
+        [InlineData(1, 2, 2)]
+        [InlineData(1, -2, -2)]
+        [InlineData(1, 0, 0)]
+        public void Multiplicar_DoisNumeros_RetornaMultiplicacao(int numero1, int numero2, int resultadoEsperado)
+        {
+            var calculadora = new Calculadora();
+
+            int resultado = calculadora.Multiplicar(numero1, numero2);
+
+            Assert.Equal(resultadoEsperado, resultado);
+        }
     }
 }
