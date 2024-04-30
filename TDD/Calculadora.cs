@@ -13,7 +13,7 @@ namespace TDD
 
         public int Subtrair(int numero1, int numero2)
         {
-            return 0;
+            return numero1 - numero2;
         }
 
         public int Multiplicar(int numero1, int numero2)
