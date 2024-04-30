@@ -42,7 +42,7 @@ namespace TDD
 
         public List<string> Historico()
         {
-            return null;
+            return _historico;
         }
 
         private void AdicionarAoHistorico(string operacao)
