@@ -44,5 +44,29 @@ namespace TDD.Tests
 
             Assert.Equal(resultadoEsperado, resultado);
         }
+
+        [Theory]
+        [InlineData(2, 1, 2)]
+        [InlineData(4, -2, -2)]
+        [InlineData(2, 2, 1)]
+        [InlineData(1, 2, 0)]
+        public void Dividir_DoisNumeros_RetornaDivisao(int numero1, int numero2, int resultadoEsperado)
+        {
+            var calculadora = new Calculadora();
+
+            int resultado = calculadora.Dividir(numero1, numero2);
+
+            Assert.Equal(resultadoEsperado, resultado);
+        }
+
+        [Fact]
+        public void Dividir_PorZero_JogaExcecao()
+        {
+            var calculadora = new Calculadora();
+
+            void act() => calculadora.Dividir(1, 0);
+
+            Assert.Throws<DivideByZeroException>(act);
+        }
     }
 }
