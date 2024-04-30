@@ -6,7 +6,7 @@ namespace TDD
 {
     public class Calculadora
     {
-        private List<string> _historico = new List<string>();
+        private readonly List<string> _historico = new List<string>();
 
         public int Somar(int numero1, int numero2)
         {
