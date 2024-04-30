@@ -4,7 +4,7 @@ using TDD;
 
 namespace TDD.Tests
 {
-    public class UnitTest1
+    public class CalculadoraTest
     {
         [Fact]
         public void Test1()
