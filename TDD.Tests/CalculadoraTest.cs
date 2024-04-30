@@ -18,5 +18,18 @@ namespace TDD.Tests
 
             Assert.Equal(resultadoEsperado, resultado);
         }
+
+        [Theory]
+        [InlineData(1, 2, -1)]
+        [InlineData(1, -2, 3)]
+        [InlineData(1, 0, 1)]
+        public void Subtrair_DoisNumeros_RetornaSubtracao(int numero1, int numero2, int resultadoEsperado)
+        {
+            var calculadora = new Calculadora();
+
+            int resultado = calculadora.Subtrair(numero1, numero2);
+
+            Assert.Equal(resultadoEsperado, resultado);
+        }
     }
 }
